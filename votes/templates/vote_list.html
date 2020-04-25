@@ -1,0 +1,7 @@
+
+<ul>
+  {% for vote in results %}
+  <!-- why we want to use results here and why can't we set context to pass-->
+    <li><a href="/votes/{{vote.id}}">{{vote.subject}}</a> </li>
+  {% endfor %}
+</ul>
